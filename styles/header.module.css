@@ -1,14 +1,14 @@
 .Header {
-    margin-top: 289px;
+    margin-top: 298px;
     position: absolute;
     background: #e0e0e0;
-    border-radius: 25px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     width: 100vw;
     padding: 14px 32px;
     gap: 16px;
-    margin-left: -30px;
+    left: 10px;
 }
 
 .imagemperfil {

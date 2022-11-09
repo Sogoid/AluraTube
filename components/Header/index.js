@@ -1,7 +1,5 @@
-import config from "../../../config.json";
-import styles from "../../../styles/header.module.css";
-import Head from 'next/head';
-import Image from 'next/image';
+import config from "../../config.json";
+import styles from "../../styles/header.module.css";
 
 export default function Header() {
     return (
