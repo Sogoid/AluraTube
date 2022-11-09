@@ -17,7 +17,7 @@
 
 .logo {
     background-image: url(../public/logoAluraTube.svg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     margin-top: 10px;
     width: 60px;
     height: 60px;
