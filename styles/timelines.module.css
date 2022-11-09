@@ -18,6 +18,10 @@
 }
 
 .spanvideo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    -webkit-text-fill-color: black;
+    text-transform: uppercase;
     padding-top: 5px;
     display: block;
     padding-right: 24px;
