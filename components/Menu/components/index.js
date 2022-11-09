@@ -1,5 +1,5 @@
-import styles from '../styles/Home.module.css';
-import config from "../config.json";
+import styles from "../../../styles/menu.module.css";
+import config from "../../../config.json";
 
 export default function Menu() {
     return (

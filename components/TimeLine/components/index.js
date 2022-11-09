@@ -1,6 +1,5 @@
-import styles from '../styles/Home.module.css';
-import config from "../config.json";
-import styled from "styled-components";
+import config from "../../../config.json";
+import styles from "../../../styles/timelines.module.css";
 
 export default function TimeLine(prop) {
     const playlistsNames = Object.keys(prop.playlists);

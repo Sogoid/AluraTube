@@ -1,0 +1,10 @@
+.Banner {
+    background-image: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    height: 230px;
+    border-radius: 10px;
+    position: absolute;
+    width: 100vw;
+    height: 230px;
+    left: 0px;
+    margin-top: 54px;
+}

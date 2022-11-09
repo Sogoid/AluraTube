@@ -1,8 +1,10 @@
 {
-    "name": "Diogo da Silveira Ribeiro",
+    "name": "Diogo (Sogoid)",
     "job": "Estudante de React",
     "github": "Sogoid",
-    "banner": "https://images.unsplash.com/photo-1546146830-2cca9512c68e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
+    "favorites":[{
+
+    }],
     "playlists": {
         "jogos": [
             {
