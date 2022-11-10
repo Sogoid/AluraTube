@@ -17,7 +17,12 @@ export default function HomePage() {
             <div className={styles.container}>
                 <Head>
                     <title>AluraTube</title>
-                    <meta name="description" content="Gererated by create nextjs" />
+                    <meta charSet="utf-8" />
+                    <meta http-equiv="content-language" content="pt-br, en-US, fr" />
+                    <meta name="description" content="Estudo de React na Imersão Alura" />
+                    <meta name="author" content="Diogo-Sogoid" />
+                    <meta name="robots" content="index, follow" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <link rel="icon" href="/AluraTube.ico" />
                 </Head>
                 <section >
