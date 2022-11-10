@@ -1,5 +1,6 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import * as React from "react";
+
+
 
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
     const valorDaBusca = valorDoFiltro;

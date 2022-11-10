@@ -1,30 +1,38 @@
-import config from "../../config.json";
 import styles from "../../styles/timelines.module.css";
+import * as React from "react";
 
-export default function TimeLine(prop) {
+
+export default function TimeLine(searchValue, ...prop) {
     const playlistsNames = Object.keys(prop.playlists);
     return (
-        <div>
-            {playlistsNames.map((playlistsNames) => {
-                const videos = prop.playlists[playlistsNames];
+        <>
+            {playlistsNames.map((playlistsName) => {
+                const videos = prop.playlists[playlistsName];
                 return (
-                    <section key={playlistsNames} className={styles.sectionvideo}>
-                        <h2 className={styles.tituloh2}>{playlistsNames}</h2>
+                    <section key={playlistsName} className={styles.sectionvideo}>
+                        <h2 className={styles.tituloh2}>{playlistsName}</h2>
                         <div className={styles.divvideo}>
-                            {videos.map((video) => {
-                                return (
-                                    <a key={video.url} className={styles.avideo} href={video.url}>
-                                        <img className={styles.thumbvideo} src={video.thumb} />
-                                        <span className={styles.spanvideo}>
-                                            {video.title}
-                                        </span>
-                                    </a>
-                                )
-                            })}
+                            {videos
+                                .filter((video) => {
+                                    const titleNormalized = video.title.toLowerCase();
+                                    const searchValueNormalized = searchValue.toLowerCase();
+                                    return titleNormalized.includes(searchValueNormalized)
+                                })
+                                .map((video) => {
+                                    return (
+                                        <a key={video.url} href={video.url} className={styles.avideo} target="_blank">
+                                            <img className={styles.thumbvideo} src={video.thumb} />
+                                            <span className={styles.spanvideo}>
+                                                {video.title}
+                                            </span>
+                                        </a>
+                                    )
+                                })}
                         </div>
                     </section>
                 )
-            })}
-        </div>
+            })
+            }
+        </>
     )
 }
