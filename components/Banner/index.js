@@ -1,4 +1,3 @@
-import config from "../../config.json";
 import styles from "../../styles/banner.module.css";
 
 export default function Banner() {

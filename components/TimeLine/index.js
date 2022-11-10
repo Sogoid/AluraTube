@@ -2,7 +2,7 @@ import styles from "../../styles/timelines.module.css";
 import * as React from "react";
 
 
-export default function TimeLine(searchValue, ...prop) {
+export default function TimeLine({ searchValue, ...prop }) {
     const playlistsNames = Object.keys(prop.playlists);
     return (
         <>
@@ -22,7 +22,7 @@ export default function TimeLine(searchValue, ...prop) {
                                     return (
                                         <a key={video.url} href={video.url} className={styles.avideo} target="_blank">
                                             <img className={styles.thumbvideo} src={video.thumb} />
-                                            <span className={styles.spanvideo}>
+                                            <span lang="pt" className={styles.spanvideo}>
                                                 {video.title}
                                             </span>
                                         </a>

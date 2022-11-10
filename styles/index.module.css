@@ -1,16 +1,3 @@
 .container {
-    padding: 0 2rem;
-}
-
-
-.timeli {
-    position: absolute;
-    width: 100vw;
-    height: 720vh;
-    left: 0;
-    top: 398px;
-
-    /* light/backgroundBase */
-
-    background: #F9F9F9;
+    min-height: 70vh;
 }

@@ -1,4 +1,37 @@
 .buscainput {
-    padding: 50px !important;
-    left: 50px !important;
+    display: flex;
+    border: 1px solid red;
+    max-width: 425px;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-left: 280px;
+
+}
+
+.imput {
+    width: 80%;
+    padding: 4px 6px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.buttom {
+    background-image: url("../public/PesquisaAluraTube.svg");
+    background-repeat: no-repeat;
+    background-position: -3px -3px;
+    background-size: 82px;
+    flex: 2;
+    cursor: pointer;
+    border: none;
+    border-color: white;
+    border-bottom-color: white;
+    width: 40px;
+    height: 40px;
+
+    @media (min-width: 600px) {
+        width: 64px;
+        height: 40px;
+    }
 }
