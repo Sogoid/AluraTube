@@ -1,14 +1,11 @@
-.Menu {
+.menuglobal {
     display: flex;
     flex-direction: row;
     height: 65px;
-
     align-items: center;
     padding: 0 16px;
     gap: 16px;
     width: 1512px;
-    background-color: #FFFFFF;
-    -webkit-text-fill-color: #222222;
 
     @media (min-width: 800px) {
         max-width: 1512px;
@@ -22,11 +19,10 @@
     font-size: 30px;
     margin-left: -20px;
     margin-top: 15px;
-    -webkit-text-fill-color: red;
+
 }
 
-.logo {
-    background-image: url(../public/logoAluraTube.svg);
+.menulogo {
     background-repeat: no-repeat;
     background-size: 80%;
     margin-top: 10px;
@@ -40,7 +36,6 @@
 }
 
 .buttom {
-    background-color: black;
     cursor: pointer;
     border: none;
     border-radius: 17px;
@@ -51,5 +46,5 @@
     height: 26px;
     overflow: hidden;
     margin-left: 735px;
-    color: white;
+
 }

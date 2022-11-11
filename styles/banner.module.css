@@ -1,7 +1,6 @@
 .Banner {
     /*background-image: url("https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");*/
 
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: first baseline;
@@ -10,8 +9,5 @@
     gap: 16px;
     width: 1512px;
     height: 232px;
-    border: 1px solid #e5e5e5;
-    background-color: #138ee0;
     -webkit-text-fill-color: #222222;
-    
 }

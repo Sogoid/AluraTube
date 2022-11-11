@@ -5,19 +5,35 @@ import BotaoDark, { Components } from "../Menu/components/botaodark"
 import * as React from "react";
 
 
+
 export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
     return (
-        <div className={styles.Menu}>
-            <div className={styles.logo} />
-            <section>
-                <h2 className={styles.paraf}>{config.namelogo}</h2>
-            </section>
-            <div>
-                <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
-            </div>
-            <div>
-                <BotaoDark />
-            </div>
-        </div>
+        <>
+            <nav className={styles.menuglobal}>
+
+                <section>
+                    <div className={styles.menulogo} />
+                    <style jsx>{`
+                            div{
+                            background-image: url(${config.logo});
+                            }          
+                        `}</style>
+                </section>
+                <section>
+                    <h2 className={styles.paraf}>{config.namelogo}</h2>
+
+                </section>
+                <section>
+                    <div>
+                        <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <BotaoDark />
+                    </div>
+                </section>
+            </nav>
+        </>
     )
 }
