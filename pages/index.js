@@ -45,6 +45,9 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <p className={styles.linhafooter}></p>
+                    </div>
                     <Footer />
                 </section>
             </div>

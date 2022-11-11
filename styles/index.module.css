@@ -14,6 +14,17 @@
     height: 1px;
     width: 1310px;
     padding: 0 16px;
-    background-color: #e5e5e5;
+    background-color: black;
     margin-top: 0;
+}
+
+.linhafooter {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 1500px;
+    padding: 0 16px;
+    background-color: black;
+    margin-top: 0;
+    margin-left: 5px;
 }

@@ -2,7 +2,7 @@
     margin-top: 0%;
     width: 200px;
     height: 85.7vh;
-    
+
     background-color: #FFFFFF;
     -webkit-text-fill-color: #222222;
 
@@ -26,7 +26,7 @@
     display: block;
     height: 1px;
     width: 80%;
-    background-color: #e5e5e5;
+    background-color: black;
     margin-top: 0;
     margin-left: 20px;
 }
