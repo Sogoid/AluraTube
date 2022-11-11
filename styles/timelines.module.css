@@ -29,9 +29,9 @@
     width: 88%;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 50fr));
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(210px, 50fr);
+    grid-template-columns: minmax(3);
+    grid-auto-flow: dense;
+    grid-auto-columns: minmax(210px, 1fr);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin-left: 15px;

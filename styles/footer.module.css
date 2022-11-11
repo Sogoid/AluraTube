@@ -9,11 +9,8 @@
     gap: 16px;
     width: 1512px;
 
+
     @media (min-width: 1512px) {
         max-width: 1000px;
     }
-}
-
-.footer span {
-    font-weight: bold;
 }

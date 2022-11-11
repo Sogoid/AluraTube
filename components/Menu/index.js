@@ -16,6 +16,9 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
                     <style jsx>{`
                             div{
                             background-image: url(${config.logo});
+                            background-repeat: no-repeat;
+                            background-size: 80%;
+                            
                             }          
                         `}</style>
                 </section>

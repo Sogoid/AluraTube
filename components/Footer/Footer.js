@@ -1,5 +1,5 @@
 import styles from "../../styles/footer.module.css"
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 export default function Footer() {
     return (
@@ -8,7 +8,11 @@ export default function Footer() {
                    div{
                     background-color: ${({ theme }) => theme.backgroundLevel1 || "#e5e5e5"};
                     border: 0px solid ${({ theme }) => theme.borderBase || "#e5e5e5"};
-                    }          
+                    font-weight:bold;  
+                    -webkit-text-fill-color: red;
+                    
+                      
+                }          
                 `}</style>
             <span>Rodapé</span>
         </div>

@@ -19,12 +19,11 @@
     font-size: 30px;
     margin-left: -20px;
     margin-top: 15px;
+    -webkit-text-fill-color: red;
 
 }
 
 .menulogo {
-    background-repeat: no-repeat;
-    background-size: 80%;
     margin-top: 10px;
     min-width: 90px;
     height: 60px;
