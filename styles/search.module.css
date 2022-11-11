@@ -5,33 +5,37 @@
     width: 100%;
     border-radius: 2px;
     overflow: hidden;
-    margin-left: 280px;
+    margin-left: 250px;
+    border-radius: 50px;
 
 }
 
 .imput {
-    width: 80%;
+    min-width: 80%;
+    max-width: 75%;
     padding: 4px 6px;
     border: none;
     outline: none;
     background-color: white;
+
 }
 
 .buttom {
     background-image: url("../public/PesquisaAluraTube.svg");
     background-repeat: no-repeat;
-    background-position: -3px -3px;
-    background-size: 82px;
+    background-position: center;
+    background-size: 130%;
     flex: 2;
     cursor: pointer;
     border: none;
     border-color: white;
     border-bottom-color: white;
-    width: 40px;
+    width: 100%;
     height: 40px;
 
     @media (min-width: 600px) {
         width: 64px;
         height: 40px;
     }
+
 }

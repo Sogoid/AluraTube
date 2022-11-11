@@ -9,7 +9,7 @@ export default function Search({ valorDoFiltro, setValorDoFiltro }) {
     return (
         <>
             <div className={styles.buscainput}>
-                <input className={styles.imput} type="text" onChange={(e) => setValorDaBusca(e.target.value)} value={valorDaBusca} />
+                <input className={styles.imput} type="text" placeholder="Encontre o que precisa..." onChange={(e) => setValorDaBusca(e.target.value)} value={valorDaBusca} />
 
                 <button className={styles.buttom}></button>
             </div>

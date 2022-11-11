@@ -1,29 +1,40 @@
 .Menu {
     display: flex;
+    flex-direction: row;
+    height: 65px;
+    position: absolute;
     align-items: center;
-    padding: 1em 1.2em;
-    background-color: #FFFFFF;
+    padding: 0 16px;
+    gap: 16px;
+    width: 1512px;
     border: 1px solid #e5e5e5;
+    background-color: #FFFFFF;
+    -webkit-text-fill-color: #222222;
+
+    @media (min-width: 800px) {
+        max-width: 1512px;
+    }
+
+
 
 }
 
 .paraf {
-    justify-items: first baseline !important;
+
     font-family: cursive;
     font-size: 30px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: -20px;
+    margin-top: 15px;
     -webkit-text-fill-color: red;
 }
 
 .logo {
     background-image: url(../public/logoAluraTube.svg);
     background-repeat: no-repeat;
-    margin-top: 5px;
-    width: 100vw;
+    background-size: 80%;
+    margin-top: 10px;
+    min-width: 90px;
     height: 60px;
-    border-radius: 5%;
-    margin-left: 35px;
     max-width: 80px;
 
     @media (min-width: 600px) {
@@ -35,12 +46,13 @@
     background-color: black;
     cursor: pointer;
     border: none;
-    border-radius: 15%;
+    border-radius: 17px;
     display: flex;
     max-width: 425px;
     max-height: 425px;
-    width: 100px;
-    height: 41px;
+    width: 50px;
+    height: 26px;
     overflow: hidden;
-    margin-left: 570px;
+    margin-left: 735px;
+    color:white;
 }

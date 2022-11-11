@@ -8,6 +8,7 @@ import Head from "next/head";
 import * as React from "react";
 import Menu from "../components/Menu/index.js";
 import Footer from "../components/Footer/Footer";
+import MenuLateral from "../components/MenuLateral/menulateral";
 
 export default function HomePage() {
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
@@ -18,7 +19,6 @@ export default function HomePage() {
                 <Head>
                     <title>AluraTube</title>
                     <meta charSet="utf-8" />
-                    <meta http-equiv="content-language" content="pt-br, en-US, fr" />
                     <meta name="description" content="Estudo de React na Imersão Alura" />
                     <meta name="author" content="Diogo-Sogoid" />
                     <meta name="robots" content="index, follow" />
@@ -29,11 +29,22 @@ export default function HomePage() {
                     <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
 
                     <Banner />
-
-                    <Header />
-                    <section>
-                        <TimeLine searchValue={valorDoFiltro} playlists={config.playlists} />
-                    </section>
+                    <div className={styles.sectdiv}>
+                        <div>
+                            <MenuLateral />
+                        </div>
+                        <div >
+                            <div>
+                                <Header />
+                            </div>
+                            <div>
+                                <p className={styles.linha}></p>
+                            </div>
+                            <div >
+                                <TimeLine searchValue={valorDoFiltro} playlists={config.playlists} />
+                            </div>
+                        </div>
+                    </div>
                     <Footer />
                 </section>
             </div>

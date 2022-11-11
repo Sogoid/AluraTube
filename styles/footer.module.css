@@ -1,11 +1,20 @@
 .footer {
+
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    height: 65px;
     justify-content: center;
-    background-color: aquamarine;
-    height: 50px;
-    margin-top: 2em;
-    border-top: 3px solid black;
+    align-items: center;
+    padding: 0 16px;
+    gap: 16px;
+    width: 1512px;
+    border: 1px solid #e5e5e5;
+    background-color: #FFFFFF;
+    -webkit-text-fill-color: #222222;
+
+    @media (min-width: 1512px) {
+        max-width: 1000px;
+    }
 }
 
 .footer span {

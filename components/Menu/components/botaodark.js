@@ -4,9 +4,10 @@ import styles from "../../../styles/menu.module.css"
 export default function BotaoDark() {
 
     return (
+        <>
+            <button className={styles.buttom}>Dark</button>
 
-        <button className={styles.buttom}>Dark</button>
-
+        </>
     )
 
 }

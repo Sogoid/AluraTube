@@ -1,3 +1,13 @@
+.sectionvideo {
+    padding: 0;
+    overflow: hidden;
+    gap: 16px;
+    width: 1510px;
+    background-color: #FFFFFF;
+    -webkit-text-fill-color: #222222;
+
+}
+
 .thumbvideo {
     aspect-ratio: 16/9;
     font-weight: 500px;
@@ -10,37 +20,32 @@
 .tituloh2 {
     font-size: 20px;
     text-transform: capitalize;
+    margin-left: 15px;
 
-}
-
-.sectionvideo {
-
-    width: 100vw;
-    padding: 0;
-    overflow: hidden;
-    padding: 16px;
 }
 
 .divvideo {
 
-    width: calc(100vw - 16px * 4);
+    width: 88%;
     display: grid;
-    grid-gap: 18px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 50fr));
     grid-auto-flow: column;
-    grid-auto-columns: minmax(200px, 1fr);
+    grid-auto-columns: minmax(210px, 50fr);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    margin-left: 15px;
 }
 
 .avideo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Helvetica Neue", Helvetica, sans-serif;
     scroll-snap-align: start;
     list-style: none;
+    text-decoration: none;
 }
 
 .spanvideo {
     padding-top: 10px;
-    display: block;
     padding-right: 24px;
     color: #222222;
 }

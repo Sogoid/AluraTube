@@ -1,0 +1,32 @@
+.menulateral {
+    margin-top: 0%;
+    width: 200px;
+    height: 85.7vh;
+    
+    background-color: #FFFFFF;
+    -webkit-text-fill-color: #222222;
+
+
+    @media (min-width: 1512px) {
+        max-width: 1000px;
+    }
+}
+
+.titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 17%;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.linhalateral {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: #e5e5e5;
+    margin-top: 0;
+    margin-left: 20px;
+}
