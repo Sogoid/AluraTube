@@ -19,7 +19,7 @@
     font-size: 30px;
     margin-left: -20px;
     margin-top: 15px;
-    -webkit-text-fill-color: red;
+
 
 }
 
@@ -32,18 +32,4 @@
     @media (min-width: 600px) {
         max-width: 127px;
     }
-}
-
-.buttom {
-    cursor: pointer;
-    border: none;
-    border-radius: 17px;
-    display: flex;
-    max-width: 425px;
-    max-height: 425px;
-    width: 50px;
-    height: 26px;
-    overflow: hidden;
-    margin-left: 735px;
-
 }

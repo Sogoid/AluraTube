@@ -1,6 +1,6 @@
 .buscainput {
     display: flex;
-    border: 1px solid red;
+
     max-width: 425px;
     width: 100%;
     border-radius: 2px;
@@ -16,20 +16,16 @@
     padding: 4px 6px;
     border: none;
     outline: none;
-    background-color: white;
-
 }
 
 .buttom {
-    background-image: url("../public/PesquisaAluraTube.svg");
+
+
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 130%;
-    flex: 2;
+    flex: 1;
     cursor: pointer;
     border: none;
-    border-color: white;
-    border-bottom-color: white;
     width: 100%;
     height: 40px;
 

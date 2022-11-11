@@ -9,10 +9,8 @@ export default function Footer() {
                     background-color: ${({ theme }) => theme.backgroundLevel1 || "#e5e5e5"};
                     border: 0px solid ${({ theme }) => theme.borderBase || "#e5e5e5"};
                     font-weight:bold;  
-                    -webkit-text-fill-color: red;
-                    
-                      
-                }          
+                    -webkit-text-fill-color: red;                 
+                   }          
                 `}</style>
             <span>Rodapé</span>
         </div>

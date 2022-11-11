@@ -1,4 +1,7 @@
 import ColorModeProvider, { ColorModeContext } from "../components/Menu/components/ColorMode.js";
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { CSSReset } from "../components/CSSReset.js";
 
 const theme = {
     light: {
@@ -29,13 +32,18 @@ function ProviderWrapper(props) {
     )
 }
 function MyApp({ Component, pageProps }) {
-    return <Component{...pageProps} />
+    const contexto = React.useContext(ColorModeContext);
+    return (
+
+        <ThemeProvider theme={theme[contexto.mode]}>
+            <Component {...pageProps} />
+        </ThemeProvider>
+
+    )
 }
 
 export default function _App(props) {
-    return (
-        <ProviderWrapper>
-            <MyApp {...props} />
-        </ProviderWrapper>
-    )
-};
+    <ProviderWrapper>
+        <MyApp {...props} />
+    </ProviderWrapper>
+}

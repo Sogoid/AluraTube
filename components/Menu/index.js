@@ -1,8 +1,8 @@
 import styles from "../../styles/menu.module.css";
 import config from "../../config.json";
 import Search, { Component } from "../Menu/components/search.js";
-import BotaoDark, { Components } from "../Menu/components/botaodark"
 import * as React from "react";
+import DarkModeSwitch from "./components/DarkModeSwitch";
 
 
 
@@ -24,6 +24,11 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
                 </section>
                 <section>
                     <h2 className={styles.paraf}>{config.namelogo}</h2>
+                    <style jsx>{`
+                            h2{
+                                -webkit-text-fill-color: ${({ theme }) => theme.textColorBase || "#e5e5e5"};                            
+                            }          
+                        `}</style>
 
                 </section>
                 <section>
@@ -33,7 +38,7 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
                 </section>
                 <section>
                     <div>
-                        <BotaoDark />
+                        <DarkModeSwitch />
                     </div>
                 </section>
             </nav>
