@@ -1,12 +1,12 @@
 
 import styles from "../styles/index.module.css";
 import config from "../config.json";
-import TimeLine from "../components/TimeLine/index.js";
-import Header from '../components/Header/index.js';
-import Banner from '../components/Banner/index.js';
+import TimeLine from "../components/TimeLine/timeline";
+import Header from '../components/Header/header';
+import Banner from '../components/Banner/bannercomp';
 import Head from "next/head";
 import * as React from "react";
-import Menu from "../components/Menu/index.js";
+import Menu from "../components/Menu/menucomp";
 import Footer from "../components/Footer/Footer";
 import MenuLateral from "../components/MenuLateral/menulateral";
 
@@ -23,7 +23,7 @@ export default function HomePage() {
                     <meta name="author" content="Diogo-Sogoid" />
                     <meta name="robots" content="index, follow" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <link rel="icon" href="/AluraTube.ico" />
+
                 </Head>
                 <section >
                     <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />

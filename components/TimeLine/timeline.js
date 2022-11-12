@@ -10,9 +10,9 @@ export default function TimeLine({ searchValue, ...prop }) {
             {playlistsNames.map((playlistsName) => {
                 const videos = prop.playlists[playlistsName];
                 return (
-                    <section key={playlistsName} className={styles.sectionvideo}>
-                        <h2 className={styles.tituloh2}>{playlistsName}</h2>
-                        <div className={styles.divvideo}>
+                    <section key={playlistsName}>
+                        <h2 >{playlistsName}</h2>
+                        <div >
                             {videos
                                 .filter((video) => {
                                     const titleNormalized = video.title.toLowerCase();
@@ -21,14 +21,9 @@ export default function TimeLine({ searchValue, ...prop }) {
                                 })
                                 .map((video) => {
                                     return (
-                                        <a key={video.url} href={video.url} className={styles.avideo} target="_blank">
-                                            <style jsx>{`
-                                            a{
-                                                color: ${({ theme }) => theme.textColorBase || "#222222"};                
-                                            }          
-                                            `}</style>
-                                            <img className={styles.thumbvideo} src={video.thumb} />
-                                            <span lang="pt" className={styles.spanvideo}>
+                                        <a key={video.url} href={video.url} target="_blank">
+                                            <img src={video.thumb} />
+                                            <span >
                                                 {video.title}
                                             </span>
                                         </a>
