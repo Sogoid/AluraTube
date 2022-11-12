@@ -1,6 +1,6 @@
 import styles from "../../styles/menu.module.css";
 import config from "../../config.json";
-import Search, { Component } from "./components/search";
+import Search, { Component } from "../Menu/components/search.js";
 import * as React from "react";
 import DarkModeSwitch from "./components/DarkModeSwitch";
 

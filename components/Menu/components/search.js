@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyledSearch } from "../components/compstyles/search";
+import { StyledSearch } from "../components/compstyles/searchstyles";
 
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
     const valorDaBusca = valorDoFiltro;
