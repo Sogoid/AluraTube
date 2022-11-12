@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledMenu = styled.header`
+export const StyledMenu = styled.header`
   display: flex;
   flex-direction: row;
   height: 56px;

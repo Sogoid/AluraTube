@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const StyledSearch = styled.div`
+export const StyledSearch = styled.div`
   display: flex;
   flex-direction: row;
   border: 1px solid ${({ theme }) => theme.borderBase};
