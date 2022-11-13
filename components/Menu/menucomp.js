@@ -1,6 +1,6 @@
+import * as React from "react";
 import config from "../../config.json";
 import Search, { Component } from "../Menu/components/search";
-import * as React from "react";
 import DarkModeSwitch from "./components/DarkModeSwitch";
 import styled from "styled-components";
 
@@ -35,7 +35,7 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
     return (
 
         <StyledMenu>
-            <StyledLogo lg={config.logo}>
+            <StyledLogo lg={`${config.logo}`}>
                 <StyledH2>{config.namelogo}</StyledH2>
             </StyledLogo>
             <div>

@@ -10,15 +10,7 @@ import Menu from "../components/Menu/menucomp";
 import Footer from "../components/Footer/Footer";
 
 
-const StyledLinha = styled.div` 
-content: '';
-    display: block;
-    height: 1px;
-    width: 100%;
-    padding: 0 16px;
-    background-color: black;
-    margin-top: 0;
-`;
+
 
 export default function HomePage() {
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
@@ -35,19 +27,17 @@ export default function HomePage() {
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
 
                 <Banner />
-                <div>
+                <div >
+                    <div>
+                        <Header />
+                    </div>
 
                     <div >
-                        <div>
-                            <Header />
-                        </div>
-                        <StyledLinha />
-                        <div >
-                            <TimeLine searchValue={valorDoFiltro} playlists={config.playlists} />
-                        </div>
+                        <TimeLine searchValue={valorDoFiltro} playlists={config.playlists} />
                     </div>
                 </div>
-                <StyledLinha />
+
+
                 <Footer />
             </section>
         </div>

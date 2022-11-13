@@ -6,13 +6,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
+    "bootstrap": "5.2.2",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "5.3.6"
   },
   "devDependencies": {
-    "sass": "^1.56.1"
+    "sass": "1.56.1"
   }
 }
