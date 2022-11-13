@@ -27,18 +27,18 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
     return (
 
         <StyledMenu>
-            <Image src="/images/logoAluraTube.svg"
-                alt="Vercel logo"
-                width={30}
-                height={30}
-                style={{
-                    display: "flex",
-                    maxWidth: '100%',
-                    height: 'auto',
-                }} />
+            <div style={{ display: "flex" }}>
+                <Image src="/images/logoAluraTube.svg"
+                    alt="Vercel logo"
+                    width={'40'}
+                    height={'40'}
+                    style={{
+                        maxWidth: '100%',
+                        height: 'auto',
+                    }} />&nbsp;&nbsp;&nbsp;
 
-            <StyledH2>{config.namelogo}</StyledH2>
-
+                <StyledH2>{config.namelogo}</StyledH2>
+            </div>
             <div>
                 <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
             </div>

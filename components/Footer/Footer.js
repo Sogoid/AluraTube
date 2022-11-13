@@ -15,7 +15,7 @@ const StyledFooter = styled.div`
      gap: 16px;
      width: 100%;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Helvetica Neue", Helvetica, sans-serif, 'Poppins', sans-serif;
-
+position: fixed;
 
      @media (min-width: 100%) {
      max-width: 1000px;

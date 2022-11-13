@@ -9,9 +9,6 @@ import Menu from "../components/Menu/menucomp";
 import Footer from "../components/Footer/Footer";
 
 
-
-
-
 export default function HomePage() {
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
