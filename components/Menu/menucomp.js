@@ -1,10 +1,11 @@
 import config from "../../config.json";
-import Search, { Component } from "../Menu/components/search.js";
+import Search, { Component } from "../Menu/components/search";
 import * as React from "react";
 import DarkModeSwitch from "./components/DarkModeSwitch";
 import styled from "styled-components";
 
-const StyledMenu = styled.div`
+
+const StyledMenu = styled.header`
   display: flex;
   flex-direction: row;
   height: 56px;
@@ -14,12 +15,13 @@ const StyledMenu = styled.div`
   align-items: center;
   padding: 0 16px;
   gap: 16px;
-  position: fixed;
   width: 100%;
 `;
-const StyledLogo = styled.div`width: 100%;
+const StyledLogo = styled.div`
+display: flex;
+width: 100%;
 max-width: 80px;
-background-image: 'url(${config.logo})';
+background-image: url(${({ lg }) => lg});
 background-repeat: 'no-repeat';
 background-size: '80%';
 @media (min-width: 600px) {
@@ -31,21 +33,17 @@ const StyledH2 = styled.h2` fill: ${({ theme }) => theme.textColorBase || "#2222
 
 export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
     return (
+
         <StyledMenu>
-            <div>
-                <StyledLogo />
-            </div>
-            <StyledH2>{config.namelogo}</StyledH2>
+            <StyledLogo lg={config.logo}>
+                <StyledH2>{config.namelogo}</StyledH2>
+            </StyledLogo>
             <div>
                 <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
             </div>
-
             <div>
                 <DarkModeSwitch />
             </div>
-
-
-
         </StyledMenu>
     )
 }

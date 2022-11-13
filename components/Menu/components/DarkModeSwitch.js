@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledSwitch } from "../components/compstyles/darkmodeswitchstyles";
+import { StyledSwitch } from "./compstyles/darkmodeswitchstyles";
 import { ColorModeContext } from "./ColorMode";
 
 export default function DarkModeSwitch() {

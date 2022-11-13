@@ -7,9 +7,9 @@ export const CSSReset = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Helvetica Neue", Helvetica, sans-serif, 'Poppins', sans-serif;
+
+    body {
+    font-family: sans-serif;
     background-color: ${({ theme }) => theme.backgroundBase};
     color: ${({ theme }) => theme.textColorBase};
   }
@@ -22,6 +22,7 @@ export const CSSReset = createGlobalStyle`
   body {
     display: flex;
     flex: 1;
+    
   }
   #__next {
     display: flex;
@@ -32,10 +33,10 @@ export const CSSReset = createGlobalStyle`
   a {
     text-decoration: none;
     opacity: 1;
-    transition: 0.3s;
+    transition: .3s;
     &:hover,
     &:focus {
-      opacity: 0.5;
+      opacity: .5;
     }
   }
 `;

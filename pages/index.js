@@ -8,7 +8,6 @@ import Header from '../components/Header/header';
 import Banner from '../components/Banner/bannercomp';
 import Menu from "../components/Menu/menucomp";
 import Footer from "../components/Footer/Footer";
-import MenuLateral from "../components/MenuLateral/menulateral";
 
 
 const StyledLinha = styled.div` 
@@ -26,11 +25,7 @@ export default function HomePage() {
 
     return (
 
-        <div style={{
-            display: "flex",
-            flexDirection: "column",
-            flex: 1,
-        }}>
+        <div>
             <Head>
                 <title>AluraTube</title>
 
@@ -40,7 +35,7 @@ export default function HomePage() {
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
 
                 <Banner />
-                <div style={{ display: 'flex' }}>
+                <div>
 
                     <div >
                         <div>
@@ -52,7 +47,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <StyledLinha></StyledLinha>
+                <StyledLinha />
                 <Footer />
             </section>
         </div>
