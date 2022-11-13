@@ -1,5 +1,4 @@
 
-import styled from "styled-components";
 import Head from "next/head";
 import * as React from "react";
 import config from "../config.json";
@@ -8,7 +7,7 @@ import Header from '../components/Header/header';
 import Banner from '../components/Banner/bannercomp';
 import Menu from "../components/Menu/menucomp";
 import Footer from "../components/Footer/Footer";
-import Link from "next/link";
+
 
 
 
