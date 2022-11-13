@@ -3,6 +3,7 @@ import config from "../../config.json";
 import Search, { Component } from "../Menu/components/search";
 import DarkModeSwitch from "./components/DarkModeSwitch";
 import styled from "styled-components";
+import Image from 'next/image';
 
 
 const StyledMenu = styled.header`
@@ -17,16 +18,7 @@ const StyledMenu = styled.header`
   gap: 16px;
   width: 100%;
 `;
-const StyledLogo = styled.div`
-display: flex;
-width: 100%;
-max-width: 80px;
-background-image: url(${({ lg }) => lg});
-background-repeat: 'no-repeat';
-background-size: '80%';
-@media (min-width: 600px) {
-  max-width: 127px;
-}`;
+
 
 const StyledH2 = styled.h2` fill: ${({ theme }) => theme.textColorBase || "#222222"};
 `;
@@ -35,15 +27,24 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
     return (
 
         <StyledMenu>
-            <StyledLogo lg={`${config.logo}`}>
-                <StyledH2>{config.namelogo}</StyledH2>
-            </StyledLogo>
+            <Image src="/images/logoAluraTube.svg"
+                alt="Vercel logo"
+                width={30}
+                height={30}
+                style={{
+                    display: "flex",
+                    maxWidth: '100%',
+                    height: 'auto',
+                }} />
+
+            <StyledH2>{config.namelogo}</StyledH2>
+
             <div>
                 <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
             </div>
             <div>
                 <DarkModeSwitch />
             </div>
-        </StyledMenu>
+        </StyledMenu >
     )
 }

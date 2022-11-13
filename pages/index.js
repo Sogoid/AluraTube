@@ -8,6 +8,7 @@ import Header from '../components/Header/header';
 import Banner from '../components/Banner/bannercomp';
 import Menu from "../components/Menu/menucomp";
 import Footer from "../components/Footer/Footer";
+import Link from "next/link";
 
 
 
@@ -20,6 +21,7 @@ export default function HomePage() {
         <div>
             <Head>
                 <title>AluraTube</title>
+                <link href="/images/AluraTube.ico" />
 
 
             </Head>
