@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const StyledBanner = styled.div`
         background-image: url(${({ bg }) => bg});
-    height: 230px;
+        height: 230px;
+        position: relative;
 `;
 export default function Banner() {
     return (

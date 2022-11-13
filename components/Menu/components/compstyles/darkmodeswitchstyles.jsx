@@ -5,11 +5,9 @@ export const StyledSwitch = styled.div`
   border: 0;
   padding: 3px;
   font-size: 12px;
-  width: 45px;
-  height: 20px;
+  width: 50px;
+  height: 29px;
   display: flex;
-  margin-left:70vw;
-  justify-content: space-around;
   border-radius: 10000px;
   position: relative;
   label {
@@ -20,7 +18,7 @@ export const StyledSwitch = styled.div`
   label:before {
     content: "";
     background-color: #fafafa;
-    border: 1px solid #333333;
+    border: 2px solid #333333;
     width: 24px;
     height: 24px;
     border-radius: 100%;

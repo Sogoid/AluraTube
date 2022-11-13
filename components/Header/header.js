@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
             padding: 0 16px;
             gap: 16px;
             width: 100%;
+            position: relative;
 
         img {
             width: 60px;
