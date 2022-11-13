@@ -15,7 +15,11 @@ export default function HomePage() {
 
     return (
 
-        <div className={styles.container}>
+        <div style={{
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+        }}>
             <Head>
                 <title>AluraTube</title>
 

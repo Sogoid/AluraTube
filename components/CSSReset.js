@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+
 export const CSSReset = createGlobalStyle`
   /* Reset */
   * {
@@ -8,7 +9,7 @@ export const CSSReset = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Helvetica Neue", Helvetica, sans-serif, 'Poppins', sans-serif;
     background-color: ${({ theme }) => theme.backgroundBase};
     color: ${({ theme }) => theme.textColorBase};
   }
@@ -31,10 +32,10 @@ export const CSSReset = createGlobalStyle`
   a {
     text-decoration: none;
     opacity: 1;
-    transition: .3s;
+    transition: 0.3s;
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 `;

@@ -28,7 +28,7 @@ export const StyledSwitch = styled.div`
     top: 0;
     bottom: 0;
     left: 0;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
   }
   input[type="checkbox"] { display: none; }
