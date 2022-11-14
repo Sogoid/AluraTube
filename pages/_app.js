@@ -2,8 +2,13 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { CSSReset } from "../components/CSSReset";
 import ColorModeProvider, { ColorModeContext } from "../components/Menu/components/ColorMode";
+import { Inter } from '@next/font/google'
 
-
+const inter = Inter(
+    {
+        variable: '--inter-font',
+    }
+)
 const theme = {
     light: {
         backgroundBase: "#f9f9f9",

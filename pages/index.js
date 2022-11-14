@@ -17,9 +17,7 @@ export default function HomePage() {
         <div>
             <Head>
                 <title>AluraTube</title>
-                <link href="/images/AluraTube.ico" />
-
-
+                <link rel="icon" href="/images/favicon.ico" />
             </Head>
             <section >
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
