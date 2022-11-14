@@ -3,13 +3,15 @@ import config from "../../config.json";
 import Search, { Component } from "../Menu/components/search";
 import DarkModeSwitch from "./components/DarkModeSwitch";
 import styled from "styled-components";
+import Image from 'next/image';
+
 
 
 const StyledMenu = styled.header`
   display: flex;
   flex-direction: row;
   height: 56px;
-   justify-content: space-between;
+  justify-content: space-between;
   background-color: ${({ theme }) => theme.backgroundLevel1 || "#FFFFFF"};
   border: 1px solid ${({ theme }) => theme.borderBase || "#e5e5e5"};
   align-items: center;
@@ -18,15 +20,7 @@ const StyledMenu = styled.header`
   width: 100%;
 
 `;
-const StyLedLogo = styled.div`
-    background-image: url(${({ lg }) => lg});
-    width: 100%;
-    max-width: 80px;
-    @media (min-width: 600px) {
-      max-width: 127px;
-      
-    }
-`;
+
 export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
     return (
 
@@ -38,9 +32,12 @@ export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
                 justifyContent: "first baseline",
                 alignItems: "center"
             }}>
-                <StyLedLogo lg={config.lg} />
+                <span>
+                    <Image src="/images/logoAluraTube.svg" alt="Atulra Tube" width={80} height={30} />
+                </span>
                 <p style={{
                     fill: "${({ theme }) => theme.textColorBase || '#222222'}",
+                    fontSize: "25px",
 
                 }}>{config.namelogo}</p>
             </div>

@@ -10,9 +10,11 @@ const StyledSearch = styled.div`
   border-radius: 2px;
   overflow: hidden;
   border-radius:50px;
+  margin-right: 400px;
+  
 
   input {
-    width: 80%;
+    width: 100%;
     padding: 4px 6px;
     border: none;
     outline: none;
@@ -35,15 +37,15 @@ const StyledSearch = styled.div`
   }
 `;
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
-    const valorDaBusca = valorDoFiltro;
-    const setValorDaBusca = setValorDoFiltro;
-    return (
+  const valorDaBusca = valorDoFiltro;
+  const setValorDaBusca = setValorDoFiltro;
+  return (
 
-        <StyledSearch>
-            <input type="text" placeholder="Encontre o que precisa..." onChange={(e) => setValorDaBusca(e.target.value)} value={valorDaBusca} />
-            <button>🔍</button>
-        </StyledSearch>
+    <StyledSearch>
+      <input type="text" placeholder="Encontre o que precisa..." onChange={(e) => setValorDaBusca(e.target.value)} value={valorDaBusca} />
+      <button>🔍</button>
+    </StyledSearch>
 
-    )
+  )
 
 }
